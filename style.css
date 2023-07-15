@@ -5,9 +5,23 @@
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
 
-:root {
-  @apply --open-props;
+@font-face {
+  font-family: 'canopee';
+  src: url('assets/Canopee.woff2') format('woff2');
+  font-weight: normal;
 }
+
+@font-face {
+  font-family: 'EditorialNew';
+  src: url('assets/DomaineDispCondMedium.woff2') format('woff2');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'EditorialNew';
+  src: url('assets/EditorialNew-Light.woff2') format('woff2');
+  font-weight: 400;
+}
+
 
 html,
 body,
@@ -343,23 +357,20 @@ h1 {
 #page1 .head {
   width: 96%;
   margin-inline: 2%;
-  margin-block: 8rem;
+  margin-block: 3rem;
 }
 #page1 .head h1 {
-  font-size: 23vw;
-  font-family: "Roboto", sans-serif;
+  font-size: 33vw;
+  font-family: "canopee", sans-serif;
   text-transform: uppercase;
   color: #c4bcb3;
   text-align: center;
-  font-weight: 700;
   background-color: #222;
-  margin-block: 7rem;
-  letter-spacing: -1.8vw;
-  transform: scaleY(1.5);
+  /* margin-block: 7rem; */
 }
 
-#page2,#page3{
-  height: 150vh;
+#page2{
+  height: 100vh;
   width: 100vw;
   background-color: #c4bcb3;
   display: flex;
@@ -376,55 +387,24 @@ h1 {
 }
 
 #page2-left h2{
-  font-size: 5.5vw;
-  font-family: "Roboto", sans-serif;
+  font-size: 7vw;
+  font-family: 'canopee', sans-serif;
   text-transform: uppercase;
   color: #222;
   text-align: center;
-  font-weight: 700;
-  background-color: #c4bcb3;
-  letter-spacing: -5px;
-  transform: scaleY(1.3);
-  margin-bottom: 2.1rem;
-}
-#page2-left h2::after{
-  content: "";
-  display: block;
-  width: 100%;
-  height: 0.1px;
-  background-color: #a99d9d;
-  position: absolute;
-  top:65px;
-  left: 0;
-  
+  margin-bottom: -1.5rem;
 }
 #page2-left h1{
-  font-size: 9vw;
-  font-family: "Roboto", sans-serif;
+  font-size: 13vw;
+  font-family: "canopee", sans-serif;
   text-transform: uppercase;
   color: #222;
   text-align: center;
-  font-weight: 700;
   background-color: #c4bcb3;
-  transform: scaleY(1.5);
-  letter-spacing: -5px;
-  
-
-}
-#page2-left h1::after{
-  content: "";
-  display: block;
-  width: 100%;
-  height: 0.1px;
-  background-color: #a99d9d;
-  position: absolute;
-  top:100px;
-  left: 0;
-  
 }
 #page2-left .img-box{
   width: 100%;
-  height: 50vw;
+  height: 35vw;
   margin: 0 auto;
   margin-block:2rem;
 }
@@ -434,36 +414,22 @@ h1 {
   object-fit: cover;
   border: 1px solid #222;
 }
-#page2-left p:first-of-type::first-letter{
-  font-size:10rem;
+#page2-left h5:first-of-type::first-letter{
+  font-family: Canopee,sans-serif;
+  font-size:8rem;
   float :left;
   color: #c4bcb3;
   background-color: #222;
-  padding: 20px 6px ;
+  padding: 40px 7px;
   margin-top: 10px;
-  font-weight: thin;
+  margin-right: 20px;
   text-align: center;
-  line-height: 50%;
-  
-
 }
-#page2-left .a{
-  font-size: 7rem;
-  font-family:"Fira Sans Extra Condensed", sans-serif; ;
-  color: #c4bcb3;
-  background-color: #222;
-  width: 45px;
-  height: 50px;
-  
-
-}
-#page2-left p{
-  font-family:"Fira Sans Extra Condensed", sans-serif;
+#page2-left h5{
+  font-family: EditorialNew, sans-serif;
   color: #222;
-  font-size: 2vw;
+  font-size: 1.5rem;
   line-height: 2.7vw;
-  text-align: left;
-  /* letter-spacing: -2px; */
   font-weight: 400;
 }
 #page2-right{
@@ -475,9 +441,9 @@ h1 {
 
 #page2-right .img-box{
   width: 100%;
-  height: 55vw;
+  height: 42vw;
   margin: 0 auto;
-  /* margin-block:2rem; */
+  margin-bottom:2rem;
 }
 #page2-right img{
   width: 100%;
@@ -487,16 +453,40 @@ h1 {
 }
 #page2-right h1{
   /* font-size: calc(48px + (86  -  48) * ( 100vw  -  300px )/ ( 1600  -  300 )); */
-  font-size: 5.5vw;
-  line-height: 4.6vw;
-  font-family: "Roboto", sans-serif;
+  font-size: 8.3vw;
+  line-height: 6.6vw;
+  word-spacing: 5px;
+  letter-spacing: -.05em;
+  font-weight: 400;
+  font-family: Canopee, sans-serif;
   text-transform: uppercase;
   color: #222;
   text-align: start;
-  font-weight: 700;
-  background-color: #c4bcb3;
-  transform: scaleY(1.5);
-  letter-spacing: -5px;
-  word-spacing: 8px;
  
+}
+#page3{
+  height: 100vh;
+  width: 100vw;
+  background-color: #c4bcb3;
+}
+.website{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+  background-color: #c4bcb3;
+}
+.website .content{
+  width: 75vw;
+  background-color: #222;
+  text-align: center;
+  
+}
+.website h1{
+  font-size: 25vw;
+  font-family: Canopee, sans-serif;
+  text-transform: uppercase;
+  color: #c4bcb3;
+  text-align: center;
+  
 }
