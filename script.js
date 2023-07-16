@@ -11,7 +11,7 @@ tl.to("#page1",{
     duration:0
 })
 tl.to("#page1",{
-    y:"50vh",
+    y:"30vh",
     duration:1,
     delay:1
 })
@@ -19,10 +19,9 @@ tl.to("#page1",{
     y:"0vh",
     rotate:-360,
     scale:1,
-    duration:1.5,
+    duration:1,
     onComplete: ()=>(main.style.position="unset"),
 })
-
 
 
 
