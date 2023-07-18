@@ -12,7 +12,7 @@
 }
 
 @font-face {
-  font-family: 'EditorialNew';
+  font-family: 'Domaine';
   src: url('assets/DomaineDispCondMedium.woff2') format('woff2');
   font-weight: 600;
 }
@@ -166,6 +166,7 @@ h4,
 h5,
 h6 {
   color: green;
+  margin: 0;
 }
 html, body {
     height: 100%;
@@ -416,15 +417,15 @@ h1 {
   border: 1px solid #222;
 }
 #page2-left h5:first-of-type::first-letter{
-  font-family: Canopee,sans-serif;
-  font-size:8rem;
-  float :left;
-  color: #c4bcb3;
-  background-color: #222;
-  padding: 40px 7px;
-  margin-top: 10px;
-  margin-right: 20px;
-  text-align: center;
+  font-family: "Canopee", sans-serif;
+  font-feature-settings: "ss03";
+  float: left;
+  font-size: 7vw;
+  line-height: 5vw;
+  margin: .7vw 1vw 0.5vw 0vw;
+  background-color: #1D1D1B;
+  color: #CDC6BE;
+  padding: .75vw .4vw .5vw .5vw
 }
 #page2-left h5{
   font-family: EditorialNew, sans-serif;
@@ -467,7 +468,7 @@ h1 {
  
 }
 #page3{
-  height: 100vh;
+  height: 0100vh;
   width: 100vw;
   background-color: #c4bcb3;
 }
@@ -585,8 +586,52 @@ h1 {
 }
 .wrapper .content .project p{
   font-family: EditorialNew, sans-serif;
-  font-size: 1.1rem;
+  font-size:1.4vw;
   color: #222;
-  margin: 0;
-  padding: 0;
+  
+}
+.wrapper .intro{
+  width: 100%;
+  height: 100%;
+
+}
+.wrapper .intro h2{
+  font-size: 7vw;
+  font-family: Canopee,'sans-serif';
+  color: #222;
+  letter-spacing: -5px;
+
+}
+.wrapper .intro h1{
+  font-size: 14vw;
+  font-family: Canopee,'sans-serif';
+  color: #222;
+  letter-spacing: -5px;
+}
+.wrapper .intro >p{
+  font-family: EditorialNew, sans-serif;
+  font-size: 2.5vw;
+  color: #222;
+  margin-block: 2rem;
+
+}
+.wrapper .intro .artisan{
+  padding-top:3rem ;
+}
+
+.wrapper .intro p:first-of-type::first-letter{
+  font-family: "Canopee", sans-serif;
+        font-feature-settings: "ss03";
+        float: left;
+        font-size: 7vw;
+        line-height: 5vw;
+        margin: .7vw 1vw 0.5vw 0vw;
+        background-color: #1D1D1B;
+        color: #CDC6BE;
+        padding: .75vw .4vw .5vw .5vw
+}
+.wrapper .intro a{
+  margin-block: 2rem;
+  border: 5px solid #222;
+  background-color: #CDC6BE;
 }
