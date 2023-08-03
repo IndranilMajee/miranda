@@ -6,22 +6,21 @@
 @import "https://unpkg.com/open-props/normalize.min.css";
 
 @font-face {
-  font-family: 'canopee';
-  src: url('assets/Canopee.woff2') format('woff2');
+  font-family: "canopee";
+  src: url("assets/Canopee.woff2") format("woff2");
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Domaine';
-  src: url('assets/DomaineDispCondMedium.woff2') format('woff2');
+  font-family: "Domaine";
+  src: url("assets/DomaineDispCondMedium.woff2") format("woff2");
   font-weight: 600;
 }
 @font-face {
-  font-family: 'EditorialNew';
-  src: url('assets/EditorialNew-Light.woff2') format('woff2');
+  font-family: "EditorialNew";
+  src: url("assets/EditorialNew-Light.woff2") format("woff2");
   font-weight: 400;
 }
-
 
 html,
 body,
@@ -168,19 +167,20 @@ h6 {
   color: green;
   margin: 0;
 }
-html, body {
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
 #main {
-  background-color: #222;
+  background-color:  #222;
   position: fixed;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 #page1 {
-  height: calc(100% + 100vw);
+  height: 100%;
   width: 100vw;
   background-color: #c4bcb3;
   position: relative;
@@ -370,7 +370,7 @@ h1 {
   /* margin-block: 7rem; */
 }
 
-#page2{
+#page2 {
   height: 100%;
   width: 100vw;
   background-color: #c4bcb3;
@@ -379,7 +379,7 @@ h1 {
   justify-content: space-between;
 }
 
-#page2-left{
+#page2-left {
   height: 100%;
   width: 35%;
   padding-left: 2rem;
@@ -387,15 +387,15 @@ h1 {
   border-right: 1px solid #222;
 }
 
-#page2-left h2{
+#page2-left h2 {
   font-size: 7vw;
-  font-family: 'canopee', sans-serif;
+  font-family: "canopee", sans-serif;
   text-transform: uppercase;
   color: #222;
   text-align: center;
   margin-bottom: -1.5rem;
 }
-#page2-left h1{
+#page2-left h1 {
   font-size: 14vw;
   font-family: "canopee", sans-serif;
   text-transform: uppercase;
@@ -404,30 +404,30 @@ h1 {
   background-color: #c4bcb3;
   letter-spacing: -10px;
 }
-#page2-left .img-box{
+#page2-left .img-box {
   width: 100%;
   height: 35vw;
   margin: 0 auto;
-  margin-block:2rem;
+  margin-block: 2rem;
 }
-#page2-left img{
+#page2-left img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border: 1px solid #222;
 }
-#page2-left h5:first-of-type::first-letter{
+#page2-left h5:first-of-type::first-letter {
   font-family: "Canopee", sans-serif;
   font-feature-settings: "ss03";
   float: left;
   font-size: 7vw;
   line-height: 5vw;
-  margin: .7vw 1vw 0.5vw 0vw;
-  background-color: #1D1D1B;
-  color: #CDC6BE;
-  padding: .75vw .4vw .5vw .5vw
+  margin: 0.7vw 1vw 0.5vw 0vw;
+  background-color: #1d1d1b;
+  color: #cdc6be;
+  padding: 0.75vw 0.4vw 0.5vw 0.5vw;
 }
-#page2-left h5{
+#page2-left h5 {
   font-family: EditorialNew, sans-serif;
   color: #222;
   font-size: 1.5rem;
@@ -435,44 +435,43 @@ h1 {
   font-weight: 400;
   margin: n;
 }
-#page2-right{
+#page2-right {
   height: 100%;
   width: 60%;
   padding-right: 3rem;
-  
 }
 
-#page2-right .img-box{
+#page2-right .img-box {
   width: 100%;
   height: 42vw;
   margin: 0 auto;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 }
-#page2-right img{
+#page2-right img {
   width: 100%;
   height: 100%;
   border: 1px solid #222;
   object-fit: cover;
 }
-#page2-right h1{
+#page2-right h1 {
   /* font-size: calc(48px + (86  -  48) * ( 100vw  -  300px )/ ( 1600  -  300 )); */
   font-size: 8.3vw;
   line-height: 6.6vw;
   word-spacing: 5px;
-  letter-spacing: -.05em;
+  letter-spacing: -0.05em;
   font-weight: 400;
   font-family: Canopee, sans-serif;
   text-transform: uppercase;
   color: #222;
   text-align: start;
- 
 }
-#page3{
-  height: 0100vh;
-  width: 100vw;
+#page3 {
+  height: max-content;
+  width: 100%;
+  overflow: hidden;
   background-color: #c4bcb3;
 }
-.website{
+.website {
   width: 100vw;
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -481,157 +480,149 @@ h1 {
   gap: 2rem;
   padding-block: 3rem;
 }
-.website .content{
+.website .content {
   text-align: center;
 }
-.website h1{
+.website h1 {
   font-size: 27vw;
   font-family: Canopee, sans-serif;
   text-transform: uppercase;
   color: #c4bcb3;
   background-color: #222;
   text-align: center;
-  
 }
-.website .img_box{
+.website .img_box {
   width: 85%;
   height: auto;
 }
-.website .img_box img{
+.website .img_box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.wrapper{
-  width: 96vw;
+.wrapper {
+  width: 100%;
   height: auto;
   margin-top: 2rem;
-  margin-inline:2rem ;
   display: grid;
   grid-template-columns: 2fr 1fr;
   background-color: #c4bcb3;
 }
 
-.wrapper .content{
+.wrapper .content {
   height: fit-content;
+  margin-left: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   background-color: #c4bcb3;
 }
-.wrapper .content .next h2{
+.wrapper .content .next h2 {
   font-size: 3.8vw;
-  font-family: 'canopee', sans-serif;
+  font-family: "canopee", sans-serif;
   text-transform: uppercase;
   color: #222;
   font-weight: 500;
- 
+
   margin-bottom: 2rem;
   letter-spacing: -3px;
-  
 }
-.wrapper .content .next h3{
+.wrapper .content .next h3 {
   font-size: 2.5vw;
   font-family: EditorialNew, sans-serif;
   color: #222;
   /* letter-spacing: -2px; */
   font-weight: 500;
   margin-bottom: 5rem;
-  padding-right: 3rem; 
+  padding-right: 3rem;
 }
-.wrapper .content .next h5{
+.wrapper .content .next h5 {
   font-size: 1.1rem;
   font-family: EditorialNew, sans-serif;
   color: #222;
   font-weight: 500;
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
 }
-.wrapper .content .next h5 span{
+.wrapper .content .next h5 span {
   font-size: 1.5rem;
   font-family: EditorialNew, sans-serif;
   color: #222;
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.wrapper .content .next{
+.wrapper .content .next {
   width: 80%;
   display: block;
-  border-right: 1px solid hsla(60, 4%, 11%, 0.5) ;
+  border-right: 1px solid hsla(60, 4%, 11%, 0.5);
 }
-.wrapper .content .project{
-
+.wrapper .content .project {
   padding-right: 3rem;
   padding-bottom: 2rem;
   /* background-color: #222; */
 }
-.wrapper .content .project .img-box
-{
+.wrapper .content .project .img-box {
   overflow: hidden;
   width: 85%;
 }
-.wrapper .content .project .img-box:hover img{
+.wrapper .content .project .img-box:hover img {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
 }
 
-.wrapper .content .project h3{
-  font-family: Canopee,'sans-serif';
+.wrapper .content .project h3 {
+  font-family: Canopee, "sans-serif";
   font-size: 2vw;
   color: #222;
-  margin-block:1rem;
+  margin-block: 1rem;
   font-weight: 500;
 }
-.wrapper .content .project p{
+.wrapper .content .project p {
   font-family: EditorialNew, sans-serif;
-  font-size:1.4vw;
+  font-size: 1.4vw;
   color: #222;
-  
 }
-.wrapper .intro{
+.wrapper .intro {
   width: 100%;
   height: 100%;
-
 }
-.wrapper .intro h2{
+.wrapper .intro h2 {
   font-size: 7vw;
-  font-family: Canopee,'sans-serif';
+  font-family: Canopee, "sans-serif";
   color: #222;
   letter-spacing: -5px;
-
 }
-.wrapper .intro h1{
+.wrapper .intro h1 {
   font-size: 14vw;
-  font-family: Canopee,'sans-serif';
+  font-family: Canopee, "sans-serif";
   color: #222;
   letter-spacing: -5px;
 }
-.wrapper .intro >p{
+.wrapper .intro > p {
   font-family: EditorialNew, sans-serif;
   font-size: 2.5vw;
   color: #222;
   margin-block: 2rem;
-
 }
-.wrapper .intro .artisan{
-  padding-top:3rem ;
+.wrapper .intro .artisan {
+  padding-top: 3rem;
 }
 
-.wrapper .intro p:first-of-type::first-letter{
+.wrapper .intro p:first-of-type::first-letter {
   font-family: "Canopee", sans-serif;
-        font-feature-settings: "ss03";
-        float: left;
-        font-size: 7vw;
-        line-height: 5vw;
-        margin: .7vw 1vw 0.5vw 0vw;
-        background-color: #1D1D1B;
-        color: #CDC6BE;
-        padding: .75vw .4vw .5vw .5vw
+  font-feature-settings: "ss03";
+  float: left;
+  font-size: 7vw;
+  line-height: 5vw;
+  margin: 0.7vw 1vw 0.5vw 0vw;
+  background-color: #1d1d1b;
+  color: #cdc6be;
+  padding: 0.75vw 0.4vw 0.5vw 0.5vw;
 }
-.wrapper .intro a{
+.wrapper .intro a {
   margin-block: 2rem;
   border: 5px solid #222;
-  background-color: #CDC6BE;
+  background-color: #cdc6be;
 }
